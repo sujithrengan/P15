@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.delta.p15.VerticalPager xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:r="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main_vertical_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/container3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    </FrameLayout>
+
+      <ListView
+          android:id="@+id/listview"
+          android:layout_width="match_parent"
+          android:layout_height="300dp" />
+</RelativeLayout>
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/svg_container"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+
+    <com.delta.p15.ProgressView
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        r:arrowHeight="11dp"
+        r:arrowLength="18dp"
+        r:duration="8500"
+        r:fadeFactor="10.0"
+        r:phase="2.0"
+        r:strokeColor="#3F3F3F"
+        r:strokeWidth="2.0"
+        r:waitRadius="30dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:text="Swipe to continue"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+<RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+        android:id="@+id/container2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    </FrameLayout>
+
+        <ImageView
+            android:id="@+id/bird"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/bird" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/bird"
+            android:layout_below="@id/bird"
+            android:layout_marginLeft="40dp"
+            android:text="//Events sangam worshops contacts"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+
+
+</com.delta.p15.VerticalPager>

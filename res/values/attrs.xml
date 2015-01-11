@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwipeLayout">
+        <attr name="drag_edge" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+            <enum name="top" value="2"/>
+            <enum name="bottom" value="3"/>
+        </attr>
+ 	<attr name="horizontalSwipeOffset" format="dimension"/>
+        <attr name="verticalSwipeOffset" format="dimension"/>
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0"/>
+            <enum name="pull_out" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SvgView">
+        <attr name="strokeWidth" format="float" />
+        <attr name="strokeColor" format="color|reference" />
+        <attr name="phase" format="float" />
+        <attr name="duration" format="integer" />
+        <attr name="fadeFactor" format="float" />
+        <attr name="waitRadius" format="dimension" />
+        <attr name="arrowLength" format="dimension" />
+        <attr name="arrowHeight" format="dimension" />
+    </declare-styleable>
+
+
+<declare-styleable name="ParallaxImageView">
+        <attr name="intensity" format="float"/>
+        <attr name="tiltSensitivity" format="float"/>
+        <attr name="forwardTiltOffset" format="float"/>
+        <attr name="scaledIntensity" format="boolean"/>
+    </declare-styleable>
+
+</resources>

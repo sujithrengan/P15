@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.delta.p15.SwipeLayout
+        xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        swipe:horizontalSwipeOffset="60dp"
+        >
+
+        <LinearLayout
+            android:background="#FF5534"
+            android:tag="Bottom3"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:id="@+id/trash"
+                android:src="@drawable/trash"
+                android:layout_weight="1"
+                android:layout_width="27dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:text="Delete Item?"
+                android:textSize="17sp"
+                android:textColor="#fff"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1.42"
+                android:background="#ffffff"
+                android:text="Yes"
+                android:textColor="#FF5534" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="Hover"
+                android:text="Do not, for one repulse, forgo the purpose that you resolved to effort. "
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </com.delta.p15.SwipeLayout>
+</LinearLayout>
